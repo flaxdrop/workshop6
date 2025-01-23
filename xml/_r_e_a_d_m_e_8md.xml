@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Lite<sp/>information<sp/>om<sp/>projectet</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Detta<sp/>är<sp/>en<sp/>kort<sp/>beskrivning<sp/>av<sp/>trafiksystem<sp/>projektet.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Funktioner</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Mutex</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Threads</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>Thread.join</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Använd<sp/>programmet<sp/>såhär</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Starta<sp/>programmet.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Se<sp/>hur<sp/>trafikljussystemet<sp/>beter<sp/>sig<sp/>i<sp/>realtid.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Testa<sp/>tvinga<sp/>fram<sp/>rödljus<sp/>med<sp/>P.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Avsluta<sp/>programmet<sp/>med<sp/>Q.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>En<sp/>bild<sp/>som<sp/>representerar<sp/>ett<sp/>trafikljus.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![bild](c:\Chas\SUVX24\kurs3\workshop6\images\trafikljus.webp)</highlight></codeline>
+<codeline><highlight class="normal">![bild](images/trafikljus.webp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>En<sp/>länk</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Länk<sp/>till<sp/>github<sp/>repon<sp/>är<sp/>]<sp/>(https://github.com/flaxdrop/Projekt2)</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

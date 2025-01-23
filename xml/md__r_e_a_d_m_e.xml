@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md__r_e_a_d_m_e</compoundname>
+    <title>Lite information om projectet</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__r_e_a_d_m_e_1autotoc_md0"/></para>
+<para>Detta är en kort beskrivning av trafiksystem projektet.</para>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md1">
+<title>Funktioner</title><para><itemizedlist>
+<listitem><para>Mutex</para>
+</listitem><listitem><para>Threads<itemizedlist>
+<listitem><para>Thread.join</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md2">
+<title>Använd programmet såhär</title><para><orderedlist>
+<listitem><para>Starta programmet.</para>
+</listitem><listitem><para>Se hur trafikljussystemet beter sig i realtid.</para>
+</listitem><listitem><para>Testa tvinga fram rödljus med P.</para>
+</listitem><listitem><para>Avsluta programmet med Q.</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md3">
+<title>En bild som representerar ett trafikljus.</title><para><image type="html" name="c:\Chas\SUVX24\kurs3\workshop6\images\trafikljus.webp" alt="bild" inline="yes"></image>
+ <image type="html" name="images/trafikljus.webp" alt="bild" inline="yes"></image>
+</para>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md4">
+<title>En länk</title><para>[Länk till github repon är ] (<ulink url="https://github.com/flaxdrop/Projekt2">https://github.com/flaxdrop/Projekt2</ulink>) </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

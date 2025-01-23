@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.13.2" xml:lang="en-US">
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="trafik_8cpp" kind="file"><name>trafik.cpp</name>
+    <member refid="trafik_8cpp_1a8a0899713c9746a41d73dbe6bc249b2b" kind="enum"><name>TrafficLightColor</name></member>
+    <member refid="trafik_8cpp_1a8a0899713c9746a41d73dbe6bc249b2ba9de0e5dd94e861317e74964bed179fa0" kind="enumvalue"><name>GREEN</name></member>
+    <member refid="trafik_8cpp_1a8a0899713c9746a41d73dbe6bc249b2baa2d9547b5d3dd9f05984475f7c926da0" kind="enumvalue"><name>RED</name></member>
+    <member refid="trafik_8cpp_1a8a0899713c9746a41d73dbe6bc249b2ba8a568e5f41b7e4da88fe5c4a00aad34e" kind="enumvalue"><name>YELLOW</name></member>
+    <member refid="trafik_8cpp_1a51af509e376f73f98d8a0db2df49bd35" kind="variable"><name>pushbutton</name></member>
+    <member refid="trafik_8cpp_1ad5e0dbd36f0d71fce9b00b7f991b2f38" kind="variable"><name>mtx</name></member>
+    <member refid="trafik_8cpp_1a0afa02d14fff34c480aabfbc41ad193c" kind="variable"><name>cv</name></member>
+    <member refid="trafik_8cpp_1a1ed4e2e604e59227624ba22c4161bc64" kind="variable"><name>logMutex</name></member>
+    <member refid="trafik_8cpp_1a7138acdcadf1222850e28efaede4e8d3" kind="function"><name>currentState</name></member>
+    <member refid="trafik_8cpp_1ad1f86724914ce132c1c339e46dd7c919" kind="function"><name>exitprogram</name></member>
+    <member refid="trafik_8cpp_1aa6ea47e8c68f87e27e1de736de58275b" kind="function"><name>trafficLightController</name></member>
+    <member refid="trafik_8cpp_1ae58f973227bed2ce6a22eb4a13f76c32" kind="function"><name>userInput</name></member>
+    <member refid="trafik_8cpp_1aab6fb83bec11fa4da6515056eb467835" kind="function"><name>logState</name></member>
+    <member refid="trafik_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+    <member refid="trafik_8cpp_1abca74b85af902a109a319718c4f89fe0" kind="function"><name>logFile</name></member>
+  </compound>
+  <compound refid="ws6-task2_8cpp" kind="file"><name>ws6-task2.cpp</name>
+    <member refid="ws6-task2_8cpp_1aa99823a0fc8313c9c32541ce768fb801" kind="function"><name>add</name></member>
+    <member refid="ws6-task2_8cpp_1a470a2cec9c256d196c0e6b8fc7a6ec36" kind="function"><name>subtract</name></member>
+    <member refid="ws6-task2_8cpp_1a404433ec6fa52f2b9744c9bec2c441e4" kind="function"><name>writeToFile</name></member>
+    <member refid="ws6-task2_8cpp_1aa03901fab89242b500509c546f684ada" kind="function"><name>readFromFile</name></member>
+    <member refid="ws6-task2_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md__r_e_a_d_m_e</name>
+  </compound>
+</doxygenindex>
