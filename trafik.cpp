@@ -10,13 +10,22 @@
 #include <queue>
 #include <fstream>
 #include <sstream>
-
+/**
+ * @brief
+ *  Enum class för att hålla koll på vilken färg som lyser i trafikljuset.
+ *
+ */
 enum class TrafficLightColor
 {
     GREEN,
     RED,
     YELLOW
 };
+/**
+ * @brief
+ *
+ * @return std::atomic<TrafficLightColor>
+ */
 std::atomic<TrafficLightColor> currentState(TrafficLightColor::RED);
 std::queue<bool> pushbutton;
 std::atomic<bool> exitprogram(false);
@@ -26,6 +35,11 @@ void trafficLightController(int greenTime, int redTime, int yellowTime, int exte
 void userInput();
 void logState(const std::string &event);
 // Main som innehåller config för ljusens tider, 2 threads med ljusen på en, och userinput på den andra.
+/**
+ * @brief
+ *  Main funktionen som innehåller config för ljusens tider, 2 threads med ljusen på en, och userinput på den andra.
+ * @return int
+ */
 int main()
 {
 
@@ -42,7 +56,12 @@ int main()
 
     return 0;
 }
-// User input som kollar om q trycks så avslutar programmet, om p trycks så gör det att fotgängaren kan gå över övergångstället.
+/**
+ * @brief
+ *  User input som kollar om q trycks så avslutar programmet, om p trycks så gör det att fotgängaren kan gå över övergångstället.
+ *
+ *
+ */
 void userInput()
 {
     while (!exitprogram)
@@ -74,7 +93,12 @@ std::ofstream logFile("traffic_light_log.txt", std::ios_base::app);
 std::mutex logMutex;
 
 // Funktion som printar ut system_clock till terminalen för att hålla koll, samt loggar detta till en textfile för att spara informationen.
-
+/**
+ * @brief
+ *
+ *
+ * @param event
+ */
 void logState(const std::string &event)
 {
     auto now = std::chrono::system_clock::now();
@@ -95,6 +119,15 @@ void logState(const std::string &event)
 // Här är där all magi händer. Funktionen som flippar mellan färgerna, tar emot pushbutton kön och ändrar färgerna därefter.
 // Här har vi använt oss av logstate funktionen som vi skrev för varje output, samt condition_variable och mutex för att se till
 // Att det inte uppstår race condition mellan trådarna.
+
+/**
+ * @brief
+ *
+ * @param greenTime
+ * @param redTime
+ * @param yellowTime
+ * @param extendedRedTime
+ */
 void trafficLightController(int greenTime, int redTime, int yellowTime, int extendedRedTime)
 {
     while (!exitprogram)
