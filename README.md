@@ -21,7 +21,7 @@ Detta är en kort beskrivning av trafiksystem projektet.
 ## En bild som representerar ett trafikljus.
 
 
-![bild](images\trafikljus.webp)
+![bild](images/trafikljus.webp)
 
 
 ### En länk
