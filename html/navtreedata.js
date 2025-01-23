@@ -28,7 +28,7 @@ var NAVTREE =
     [ "Lite information om projectet", "md__r_e_a_d_m_e.html", [
       [ "Funktioner", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
       [ "Använd programmet såhär", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "En bild", "md__r_e_a_d_m_e.html#autotoc_md3", [
+      [ "En bild som representerar ett trafikljus.", "md__r_e_a_d_m_e.html#autotoc_md3", [
         [ "En länk", "md__r_e_a_d_m_e.html#autotoc_md4", null ]
       ] ]
     ] ]
