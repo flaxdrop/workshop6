@@ -1,0 +1,40 @@
+[09:27:04] Traffic Light: Yellow
+[09:27:07] Traffic Light: Green
+[09:27:12] Traffic Light: Yellow
+[09:27:15] Traffic Light: Red
+[09:27:20] Traffic Light: Yellow
+[09:27:23] Traffic Light: Green
+[09:27:25] Pedestrian Button Pushed
+[09:27:25] Traffic Light: Yellow
+[09:27:28] Traffic Light: Red
+[09:27:33] Traffic Light: Extended Red light for pedestrian
+[09:27:43] Traffic Light: Yellow
+[09:27:46] Traffic Light: Green
+[09:27:47] Pedestrian Button Pushed
+[09:27:47] Traffic Light: Yellow
+[09:27:50] Traffic Light: Red
+[09:27:55] Traffic Light: Extended Red light for pedestrian
+[09:28:05] Traffic Light: Yellow
+[09:28:08] Traffic Light: Green
+[09:28:10] Traffic Light: Yellow
+[09:28:13] Traffic Light: Red
+[09:30:42] Traffic Light: Yellow
+[09:30:45] Traffic Light: Green
+[09:30:46] Pedestrian Button Pushed
+[09:30:46] Traffic Light: Yellow
+[09:30:49] Traffic Light: Red
+[09:30:54] Traffic Light: Extended Red light for pedestrian
+[09:31:04] Traffic Light: Yellow
+[09:31:07] Traffic Light: Green
+[09:31:12] Traffic Light: Yellow
+[09:31:15] Traffic Light: Red
+[09:31:19] Pedestrian Button Pushed
+[09:31:19] Traffic Light: Extended Red light for pedestrian
+[09:31:29] Traffic Light: Yellow
+[09:31:32] Traffic Light: Green
+[09:31:37] Traffic Light: Yellow
+[09:31:40] Traffic Light: Red
+[09:31:45] Traffic Light: Yellow
+[09:31:48] Traffic Light: Green
+[09:31:53] Traffic Light: Yellow
+[09:31:55] Traffic Light: Red
