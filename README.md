@@ -21,7 +21,7 @@ Detta är en kort beskrivning av trafiksystem projektet.
 ## En bild som representerar ett trafikljus.
 
 
-![bild](c:\Chas\SUVX24\kurs3\workshop6\trafikljus.webp)
+![bild](c:\Chas\SUVX24\kurs3\workshop6\images\trafikljus.webp)
 ![bild](images/trafikljus.webp)
 
 ### En länk
