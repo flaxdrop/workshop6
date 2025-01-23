@@ -1,3 +1,14 @@
+/**
+ * @file trafik.cpp
+ * @author your name (you@domain.com)
+ * @brief
+ * @version 0.1
+ * @date 2025-01-23
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
+
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -13,7 +24,6 @@
 /**
  * @brief
  *  Enum class för att hålla koll på vilken färg som lyser i trafikljuset.
- *
  */
 enum class TrafficLightColor
 {
@@ -24,6 +34,7 @@ enum class TrafficLightColor
 /**
  * @brief
  *
+ * std::atomic<TrafficLightColor> som håller koll på vilken färg som lyser i trafikljuset.
  * @return std::atomic<TrafficLightColor>
  */
 std::atomic<TrafficLightColor> currentState(TrafficLightColor::RED);
@@ -34,11 +45,11 @@ std::condition_variable cv;
 void trafficLightController(int greenTime, int redTime, int yellowTime, int extendedRedTime);
 void userInput();
 void logState(const std::string &event);
-// Main som innehåller config för ljusens tider, 2 threads med ljusen på en, och userinput på den andra.
 /**
  * @brief
  *  Main funktionen som innehåller config för ljusens tider, 2 threads med ljusen på en, och userinput på den andra.
  * @return int
+ *  Returnerar 0
  */
 int main()
 {
@@ -59,7 +70,7 @@ int main()
 /**
  * @brief
  *  User input som kollar om q trycks så avslutar programmet, om p trycks så gör det att fotgängaren kan gå över övergångstället.
- *
+ * @return void
  *
  */
 void userInput()
@@ -92,12 +103,11 @@ void userInput()
 std::ofstream logFile("traffic_light_log.txt", std::ios_base::app);
 std::mutex logMutex;
 
-// Funktion som printar ut system_clock till terminalen för att hålla koll, samt loggar detta till en textfile för att spara informationen.
 /**
  * @brief
+ *  Funktion som printar ut system_clock till terminalen för att hålla koll, samt loggar detta till en textfile för att spara informationen.
  *
- *
- * @param event
+ * @param event eventet som skall loggas
  */
 void logState(const std::string &event)
 {
@@ -116,17 +126,17 @@ void logState(const std::string &event)
         logFile << logEntry << std::endl;
     }
 }
-// Här är där all magi händer. Funktionen som flippar mellan färgerna, tar emot pushbutton kön och ändrar färgerna därefter.
-// Här har vi använt oss av logstate funktionen som vi skrev för varje output, samt condition_variable och mutex för att se till
-// Att det inte uppstår race condition mellan trådarna.
 
 /**
- * @brief
+ * @brief Traffic Light Controller
+ *Här är där all magi händer. Funktionen som flippar mellan färgerna, tar emot pushbutton kön och ändrar färgerna därefter.
+ *Här har vi använt oss av logstate funktionen som vi skrev för varje output, samt condition_variable och mutex för att se till
+ *Att det inte uppstår race condition mellan trådarna.
  *
- * @param greenTime
- * @param redTime
- * @param yellowTime
- * @param extendedRedTime
+ * @param greenTime tid för grönt ljus
+ * @param redTime tid för rött ljus
+ * @param yellowTime tid för gult ljus
+ * @param extendedRedTime förlängd tid för röd ljus
  */
 void trafficLightController(int greenTime, int redTime, int yellowTime, int extendedRedTime)
 {

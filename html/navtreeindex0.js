@@ -1,10 +1,24 @@
 var NAVTREEINDEX0 =
 {
+"files.html":[1,0],
+"globals.html":[1,1,0],
+"globals_enum.html":[1,1,2],
+"globals_func.html":[1,1,1],
 "index.html":[],
 "md__r_e_a_d_m_e.html":[0],
 "md__r_e_a_d_m_e.html#autotoc_md1":[0,0],
 "md__r_e_a_d_m_e.html#autotoc_md2":[0,1],
 "md__r_e_a_d_m_e.html#autotoc_md3":[0,2],
 "md__r_e_a_d_m_e.html#autotoc_md4":[0,2,0],
-"pages.html":[]
+"pages.html":[],
+"trafik_8cpp.html":[1,0,0],
+"trafik_8cpp.html#a7138acdcadf1222850e28efaede4e8d3":[1,0,0,1],
+"trafik_8cpp.html#a8a0899713c9746a41d73dbe6bc249b2b":[1,0,0,0],
+"trafik_8cpp.html#a8a0899713c9746a41d73dbe6bc249b2ba8a568e5f41b7e4da88fe5c4a00aad34e":[1,0,0,0,2],
+"trafik_8cpp.html#a8a0899713c9746a41d73dbe6bc249b2ba9de0e5dd94e861317e74964bed179fa0":[1,0,0,0,0],
+"trafik_8cpp.html#a8a0899713c9746a41d73dbe6bc249b2baa2d9547b5d3dd9f05984475f7c926da0":[1,0,0,0,1],
+"trafik_8cpp.html#aa6ea47e8c68f87e27e1de736de58275b":[1,0,0,4],
+"trafik_8cpp.html#aab6fb83bec11fa4da6515056eb467835":[1,0,0,2],
+"trafik_8cpp.html#ae58f973227bed2ce6a22eb4a13f76c32":[1,0,0,5],
+"trafik_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[1,0,0,3]
 };

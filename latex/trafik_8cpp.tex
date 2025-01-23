@@ -1,0 +1,150 @@
+\doxysection{trafik.\+cpp File Reference}
+\hypertarget{trafik_8cpp}{}\label{trafik_8cpp}\index{trafik.cpp@{trafik.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{trafik_8cpp_a8a0899713c9746a41d73dbe6bc249b2b}\label{trafik_8cpp_a8a0899713c9746a41d73dbe6bc249b2b} 
+enum class \mbox{\hyperlink{trafik_8cpp_a8a0899713c9746a41d73dbe6bc249b2b}{Traffic\+Light\+Color}} \{ {\bfseries GREEN}
+, {\bfseries RED}
+, {\bfseries YELLOW}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum class för att hålla koll på vilken färg som lyser i trafikljuset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::atomic$<$ \mbox{\hyperlink{trafik_8cpp_a8a0899713c9746a41d73dbe6bc249b2b}{Traffic\+Light\+Color}} $>$ \mbox{\hyperlink{trafik_8cpp_a7138acdcadf1222850e28efaede4e8d3}{current\+State}} (Traffic\+Light\+Color\+::\+RED)
+\begin{DoxyCompactList}\small\item\em std\+::atomic$<$\+Traffic\+Light\+Color$>$ som håller koll på vilken färg som lyser i trafikljuset. \end{DoxyCompactList}\item 
+\Hypertarget{trafik_8cpp_ad1f86724914ce132c1c339e46dd7c919}\label{trafik_8cpp_ad1f86724914ce132c1c339e46dd7c919} 
+std\+::atomic$<$ bool $>$ {\bfseries exitprogram} (false)
+\item 
+void \mbox{\hyperlink{trafik_8cpp_aa6ea47e8c68f87e27e1de736de58275b}{traffic\+Light\+Controller}} (int green\+Time, int red\+Time, int yellow\+Time, int extended\+Red\+Time)
+\begin{DoxyCompactList}\small\item\em Traffic Light Controller Här är där all magi händer. Funktionen som flippar mellan färgerna, tar emot pushbutton kön och ändrar färgerna därefter. Här har vi använt oss av logstate funktionen som vi skrev för varje output, samt condition\+\_\+variable och mutex för att se till Att det inte uppstår race condition mellan trådarna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{trafik_8cpp_ae58f973227bed2ce6a22eb4a13f76c32}{user\+Input}} ()
+\begin{DoxyCompactList}\small\item\em User input som kollar om q trycks så avslutar programmet, om p trycks så gör det att fotgängaren kan gå över övergångstället. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{trafik_8cpp_aab6fb83bec11fa4da6515056eb467835}{log\+State}} (const std\+::string \&event)
+\begin{DoxyCompactList}\small\item\em Funktion som printar ut system\+\_\+clock till terminalen för att hålla koll, samt loggar detta till en textfile för att spara informationen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{trafik_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main funktionen som innehåller config för ljusens tider, 2 threads med ljusen på en, och userinput på den andra. \end{DoxyCompactList}\item 
+\Hypertarget{trafik_8cpp_abca74b85af902a109a319718c4f89fe0}\label{trafik_8cpp_abca74b85af902a109a319718c4f89fe0} 
+std\+::ofstream {\bfseries log\+File} ("{}traffic\+\_\+light\+\_\+log.\+txt"{}, std\+::ios\+\_\+base\+::app)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{trafik_8cpp_a51af509e376f73f98d8a0db2df49bd35}\label{trafik_8cpp_a51af509e376f73f98d8a0db2df49bd35} 
+std\+::queue$<$ bool $>$ {\bfseries pushbutton}
+\item 
+\Hypertarget{trafik_8cpp_ad5e0dbd36f0d71fce9b00b7f991b2f38}\label{trafik_8cpp_ad5e0dbd36f0d71fce9b00b7f991b2f38} 
+std\+::mutex {\bfseries mtx}
+\item 
+\Hypertarget{trafik_8cpp_a0afa02d14fff34c480aabfbc41ad193c}\label{trafik_8cpp_a0afa02d14fff34c480aabfbc41ad193c} 
+std\+::condition\+\_\+variable {\bfseries cv}
+\item 
+\Hypertarget{trafik_8cpp_a1ed4e2e604e59227624ba22c4161bc64}\label{trafik_8cpp_a1ed4e2e604e59227624ba22c4161bc64} 
+std\+::mutex {\bfseries log\+Mutex}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+your name (\href{mailto:you@domain.com}{\texttt{ you@domain.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/01-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{trafik_8cpp_a7138acdcadf1222850e28efaede4e8d3}\index{trafik.cpp@{trafik.cpp}!currentState@{currentState}}
+\index{currentState@{currentState}!trafik.cpp@{trafik.cpp}}
+\doxysubsubsection{\texorpdfstring{currentState()}{currentState()}}
+{\footnotesize\ttfamily \label{trafik_8cpp_a7138acdcadf1222850e28efaede4e8d3} 
+std\+::atomic$<$ \mbox{\hyperlink{trafik_8cpp_a8a0899713c9746a41d73dbe6bc249b2b}{Traffic\+Light\+Color}} $>$ current\+State (\begin{DoxyParamCaption}\item[{Traffic\+Light\+Color\+::\+RED}]{}{}\end{DoxyParamCaption})}
+
+
+
+std\+::atomic$<$\+Traffic\+Light\+Color$>$ som håller koll på vilken färg som lyser i trafikljuset. 
+
+\begin{DoxyReturn}{Returns}
+std\+::atomic$<$\+Traffic\+Light\+Color$>$ 
+\end{DoxyReturn}
+\Hypertarget{trafik_8cpp_aab6fb83bec11fa4da6515056eb467835}\index{trafik.cpp@{trafik.cpp}!logState@{logState}}
+\index{logState@{logState}!trafik.cpp@{trafik.cpp}}
+\doxysubsubsection{\texorpdfstring{logState()}{logState()}}
+{\footnotesize\ttfamily \label{trafik_8cpp_aab6fb83bec11fa4da6515056eb467835} 
+void log\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{event}{}\end{DoxyParamCaption})}
+
+
+
+Funktion som printar ut system\+\_\+clock till terminalen för att hålla koll, samt loggar detta till en textfile för att spara informationen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & eventet som skall loggas \\
+\hline
+\end{DoxyParams}
+\Hypertarget{trafik_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{trafik.cpp@{trafik.cpp}!main@{main}}
+\index{main@{main}!trafik.cpp@{trafik.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{trafik_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Main funktionen som innehåller config för ljusens tider, 2 threads med ljusen på en, och userinput på den andra. 
+
+\begin{DoxyReturn}{Returns}
+int Returnerar 0 
+\end{DoxyReturn}
+\Hypertarget{trafik_8cpp_aa6ea47e8c68f87e27e1de736de58275b}\index{trafik.cpp@{trafik.cpp}!trafficLightController@{trafficLightController}}
+\index{trafficLightController@{trafficLightController}!trafik.cpp@{trafik.cpp}}
+\doxysubsubsection{\texorpdfstring{trafficLightController()}{trafficLightController()}}
+{\footnotesize\ttfamily \label{trafik_8cpp_aa6ea47e8c68f87e27e1de736de58275b} 
+void traffic\+Light\+Controller (\begin{DoxyParamCaption}\item[{int}]{green\+Time}{, }\item[{int}]{red\+Time}{, }\item[{int}]{yellow\+Time}{, }\item[{int}]{extended\+Red\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Traffic Light Controller Här är där all magi händer. Funktionen som flippar mellan färgerna, tar emot pushbutton kön och ändrar färgerna därefter. Här har vi använt oss av logstate funktionen som vi skrev för varje output, samt condition\+\_\+variable och mutex för att se till Att det inte uppstår race condition mellan trådarna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em green\+Time} & tid för grönt ljus \\
+\hline
+{\em red\+Time} & tid för rött ljus \\
+\hline
+{\em yellow\+Time} & tid för gult ljus \\
+\hline
+{\em extended\+Red\+Time} & förlängd tid för röd ljus \\
+\hline
+\end{DoxyParams}
+\Hypertarget{trafik_8cpp_ae58f973227bed2ce6a22eb4a13f76c32}\index{trafik.cpp@{trafik.cpp}!userInput@{userInput}}
+\index{userInput@{userInput}!trafik.cpp@{trafik.cpp}}
+\doxysubsubsection{\texorpdfstring{userInput()}{userInput()}}
+{\footnotesize\ttfamily \label{trafik_8cpp_ae58f973227bed2ce6a22eb4a13f76c32} 
+void user\+Input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+User input som kollar om q trycks så avslutar programmet, om p trycks så gör det att fotgängaren kan gå över övergångstället. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
